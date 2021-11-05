@@ -22,6 +22,7 @@ public class Cronograma implements Serializable{
 	private String Estado;
 	private String Semaforo;
 	private String Duracion;
+	private String Presupuesto;
 
 	public Cronograma() {
 		
@@ -30,7 +31,7 @@ public class Cronograma implements Serializable{
 	
 	public Cronograma(String id_Cronograma, String nombre_Tarea, String actividades_Previa, String responsable,
 			String fecha_Inicio, String fecha_Fin, String completado, String estado, String semaforo,
-			String duracion) {
+			String duracion, String presupuesto) {
 		super();
 		this.Id_Cronograma = id_Cronograma;
 		this.Nombre_Tarea = nombre_Tarea;
@@ -42,6 +43,7 @@ public class Cronograma implements Serializable{
 		this.Estado = estado;
 		this.Semaforo = semaforo;
 		this.Duracion = duracion;
+		this.Presupuesto = presupuesto;
 	}
 
 
@@ -104,6 +106,14 @@ public class Cronograma implements Serializable{
 	}
 	public void setDuracion(String duracion) {
 		Duracion = duracion;
+	}
+
+	public String getPresupuesto() {
+		return Presupuesto;
+	}
+
+	public void setPresupuesto(String presupuesto) {
+		Presupuesto = presupuesto;
 	}
 	
 	
